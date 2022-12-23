@@ -1,29 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
     <title>QR code component</title>
     <style>
-    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
 
-    * {
+      :root {
+        --cor0: hsl(0, 0%, 100%);
+        --cor1: hsl(212, 45%, 89%);
+        --cor2: hsl(220, 15%, 55%);
+        --cor3: hsl(218, 44%, 22%);
+        }
+      * {
         margin: 0;
         font-family: Outfit;
-    }
+      }
+      html,
+        body {
+            width: 100vw;
+            height: 100vh;
+        }
 
-    .container1 {
-        background-color: lightgray;
-        height: 100vh;
+        body {
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor1);
+    justify-content: space-around;
+        }
+      main {
+        background-color: var(--cor1);
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-    }
 
-    .card {
+      }
+
+      .card {
         max-height: 450px;
         max-width: 280px;
         background-color: white;
@@ -33,62 +57,61 @@
         gap: 20px;
         text-align: center;
         padding: 15px;
-    }
+      }
 
-
-    img {
+      img {
         width: 100%;
         border-radius: 20px;
-    }
+        height: 280px;
+      } 
+      
+      .heading {
 
-    .text {
-        margin: 15px;
-    }
+        height: 70px;
+        height: fit-content;
+      }
+      h1 {
 
-    .heading{
-        margin-bottom:15px ;
-    }
+    font-size: 1.375em;
+      }
+
+      .info {
+
+    font-size: 1.em;
+        height: 70px;
+      }
 
 
-    .attribution {
-/*        font-size: 15px;*/
-        text-align: center; 
-        margin-top: 30px;
-        padding: 0,10px;
-    }
+      footer {
+        background-color: var(--cor1); 
+        text-align: center;
+      }
 
-    .attribution a {
+      footer a {
+    margin-top: 1.25rem;
         color: hsl(228, 45%, 44%);
-    }
-
-    @media (min-width: 375px) {
-        .card {
-
-        }
-    }
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <div class="container1">
-        <div class="card">
-            <div class="image">
-                <img src="./images/image-qr-code.png">
-            </div>
-            <div class="text">
-                <div class="heading">
-                    <h3>Improve your front-end skills by building projects</h3>
-                </div>
-                <div class="info">
-                    <p>Scan the QR code to visit Frontend Mentor and take your coding skills to the next level</p>
-                </div>
-            </div>
-        </div>
-        <div class="attribution">
-            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-            Coded by <a href="#">Swapnil Deshmukh</a>.
-        </div>
-    </div>
-</body>
-
+  <body>
+    <main>
+      <div class="card">
+        <img alt="QR code Image" src="./images/image-qr-code.png" />
+        <h1 class="heading">
+          Improve your front-end skills by building projects
+        </h1>
+        <p class="info">
+          Scan the QR code to visit Frontend Mentor and take your coding skills
+          to the next level
+        </p>
+      </div>
+    </main>
+    <footer>
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      > & coded by <a href="#">Swapnil Deshmukh</a>.
+    </footer>
+  </body>
 </html>
