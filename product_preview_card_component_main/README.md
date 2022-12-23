@@ -31,8 +31,8 @@ Users should be able to:
  
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Link](https://github.com/swapnil-s-d/frontend_mentor)
+- Live Site URL: [Link](https://product-preview-card-component-name.netlify.app/)
  
 ### Built with
 
@@ -43,5 +43,5 @@ Users should be able to:
 - [Styled Components](https://styled-components.com/) - For styles
  
 ## Author
-- Website - [Swapnil Deshmukh](https://www.your-site.com)
-- Frontend Mentor - [@swapnil-s-d](https://www.frontendmentor.io/profile/swapnil-s-d)  
+- Swapnil Deshmukh
+
