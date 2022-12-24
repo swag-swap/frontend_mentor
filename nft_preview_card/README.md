@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Link](https://github.com/swapnil-s-d/frontend_mentor/nft_preview_card/)
-- Live Site URL: [Link](https://nft_preview_card_sd.netlify.app/)
+- Live Site URL: [Link](https://nft-preview-card-sd.netlify.app/)
 
 ## My process
 
