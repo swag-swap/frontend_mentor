@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+    --col1: hsl(215, 51%, 70%);
+    --col2: hsl(178, 100%, 50%);
+    --col3: hsl(217, 54%, 11%);
+    --col4: hsl(216, 50%, 16%);
+    --col5: hsl(215, 32%, 27%);
+    --col6: hsl(0, 0%, 100%);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+body {
+    background-color: var(--col3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--col1);
+    font-family: 'Outfit', sans-serif;
+
+}
+
+main {
+    max-width: 350px;
+    max-height:fit-content;
+    box-sizing: border-box;
+    background-color: var(--col4);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.2em;
+    border-radius: 1.2em;
+}
+
+.images {
+    display:inline-block;
+    position: relative;
+}
+
+.bottom{
+    width: 100%;
+    border-radius: 0.6em;
+}
+img {
+    object-fit: fill;
+    /* height: 100%; */
+}
+
+.img-top {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: 99;
+}
+
+.images:hover .bottom{
+    opacity: 0.5;
+}
+
+.images:hover .img-top{
+    display: inline;
+}
+
+.nft_name:hover {
+    color: var(--col2);
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.val , .time {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+hr { 
+    height: 1px;
+    border: none;
+    background-color: var(--col5);
+}
+
+.val {
+    color: var(--col2);
+    font-weight: 600;
+}
+
+
+.creator {
+    display: flex;
+    align-items: center;
+}
+.creator > img {
+    width: 2em;
+    margin-right: 20px;
+    border-radius: 50%;
+    border: solid 1px var(--col6);
+}
+
+.name:hover {
+    color: var(--col2);
+}
+
+
+
+
+
+footer {
+    position: absolute;
+    bottom: 20px;
+}
+
+.attribution { font-size: 1em; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media (max-width:700px){
+    main {
+        position: absolute;
+        top: 40px;
+    }
+}
