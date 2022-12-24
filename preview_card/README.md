@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Link](https://github.com/swapnil-s-d/frontend_mentor)
-- Live Site URL: [Link](https://swapnil-s-d.github.io/frontend_mentor/preview_card/)
+- Live Site URL: [Link](https://product-preview-card-compoent.netlify.app/)
  
 ### Built with
 
